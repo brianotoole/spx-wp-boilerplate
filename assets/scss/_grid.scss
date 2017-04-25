@@ -4,6 +4,15 @@
   max-width: 1200px;
   margin: 0 auto; }
 
+.container {
+  width: 98%;
+  max-width: auto;
+  margin: 0 auto;
+  @include breakpoint(lg) {}
+  @include breakpoint(md) {}
+  @include breakpoint(sm) {}
+}
+
 .container-fluid {
   margin-right: auto;
   margin-left: auto;

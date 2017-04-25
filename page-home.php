@@ -10,8 +10,8 @@ get_header();
 
 			<?php // start loop
       while ( have_posts() ) : the_post(); ?>
-
-    <?php endwhile; // End loop ?>
+        <!--get posts-->
+      <?php endwhile; // End loop ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

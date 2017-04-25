@@ -1,0 +1,31 @@
+// Header
+.header {
+  position: relative;
+  width: 100%;
+  background-color: $color-primary;
+}
+
+.nav-primary {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  @include breakpoint(md) {
+    display: flex;
+    justify-content: flex-end;
+  }
+  li {
+    flex: 0 0 auto;
+  }
+  a {
+    padding: 0 calc-em(10px);
+    color: $color-white;
+  }
+}
+
+.nav-mobile,
+.nav-toggle {
+  @include breakpoint(md) {
+    display: none;
+  }
+}
