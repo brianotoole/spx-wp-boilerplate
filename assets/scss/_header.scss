@@ -18,8 +18,9 @@
     flex: 0 0 auto;
   }
   a {
-    padding: 0 calc-em(10px);
+    padding: 0 calc-em(15px);
     color: $color-white;
+    font-size: calc-em(18px);
   }
 }
 
@@ -28,4 +29,10 @@
   @include breakpoint(md) {
     display: none;
   }
+}
+
+.logo img {
+  margin: calc-em(10px) 0 calc-em(12px);
+  width: 100%;
+  max-width: 185px;
 }

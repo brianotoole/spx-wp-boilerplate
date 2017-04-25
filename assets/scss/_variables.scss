@@ -3,11 +3,11 @@
 // Colors: Brand
 $color-body: #222;
 $color-primary: #275cea; // dodger blue
-$color-accent:  #fff8e8; // peach gold
+$color-secondary:  #fff8e8; // peach gold
 
 // Colors: Brand-Darkens
 $color-primary-dark: darken($color-primary, 7%);
-$color-accent-dark: darken($color-accent, 7%);
+$color-secondary-dark: darken($color-secondary, 7%);
 
 // Colors: Generic
 $color-black: #222;

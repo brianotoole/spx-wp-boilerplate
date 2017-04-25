@@ -1,0 +1,12 @@
+// Page layout
+
+.hero {
+  background-color: $color-secondary;
+  .hero-text {
+    color: $color-black;
+    margin: calc-em(50px) 0;
+    @include breakpoint(md) {
+      margin: calc-em(100px) 0;
+    }
+  }
+}

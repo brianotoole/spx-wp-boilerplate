@@ -11,7 +11,7 @@ th{text-align:left}
 tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{background-color:#f9f9f9}
 body{background:#fff;color:#222;font-family:"Open Sans",sans-serif;font-size:100%;font-weight:normal;line-height:1.5}
 @media(min-width:48em){body{line-height:1.5625}
-}h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{font-family:"Francois One",sans-serif;font-weight:normal;line-height:1.2;word-wrap:break-word}
+}h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{font-family:"Francois One",sans-serif;font-weight:normal;line-height:1.2;margin:0;word-wrap:break-word}
 h1,.h1{font-size:2em}
 @media(min-width:48em){h1,.h1{font-size:3.875em}
 }h2,.h2{font-size:1.75em}
@@ -42,7 +42,6 @@ blockquote cite{color:gray;font-size:.8421052632em;padding-top:1em}
 blockquote,q{quotes:none}
 blockquote:before,blockquote:after,q:before,q:after{content:''}
 .wrapper{box-sizing:border-box;max-width:1200px;margin:0 auto}
-.container{width:98%;max-width:auto;margin:0 auto}
 .container-fluid{margin-right:auto;margin-left:auto;padding-right:2rem;padding-left:2rem}
 .row{box-sizing:border-box;display:-moz-flex;display:-ms-flexbox;display:flex;-moz-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;-moz-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-0.5rem;margin-left:-0.5rem}
 .row.reverse{-moz-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
@@ -161,6 +160,10 @@ blockquote:before,blockquote:after,q:before,q:after{content:''}
 .nav-primary{display:none;margin:0;padding:0;list-style-type:none}
 @media(min-width:48em){.nav-primary{display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}
 }.nav-primary li{-ms-flex:0 0 auto;flex:0 0 auto}
-.nav-primary a{padding:0 .625em;color:#fff}
+.nav-primary a{padding:0 .9375em;color:#fff;font-size:1.125em}
 @media(min-width:48em){.nav-mobile,.nav-toggle{display:none}
+}.logo img{margin:.625em 0 .75em;width:100%;max-width:185px}
+.hero{background-color:#fff8e8}
+.hero .hero-text{color:#222;margin:3.125em 0}
+@media(min-width:48em){.hero .hero-text{margin:6.25em 0}
 }
