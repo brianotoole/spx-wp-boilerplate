@@ -1,4 +1,4 @@
-# WP Theme
+# WP Theme Boilerplate
 
 ## Build Setup
 
