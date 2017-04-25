@@ -10,8 +10,8 @@ var jsCustomSRC         = './assets/js/custom/*.js'; // Path to JS custom script
 var jsCustomDestination = './assets/js/'; // Path to place the compiled JS custom scripts file
 var jsCustomFile        = 'custom'; // Compiled JS custom file name
 
-// Paths
-var styleWatchFiles     = './assets/css/**/*.scss'; // Path to all *.scss files inside css folder and inside them
+// Watch Paths
+var styleWatchFiles     = './assets/scss/**/*.scss'; // Path to all *.scss files inside css folder and inside them
 var vendorJSWatchFiles  = './assets/js/vendors/*.js'; // Path to all vendors JS files
 var customJSWatchFiles  = './assets/js/custom/*.js'; // Path to all custom JS files
 
