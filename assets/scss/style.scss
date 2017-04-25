@@ -1,2 +1,10 @@
-body {background: red;}
-h1 {color: red;}
+// Main style.scss
+
+// Base
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'typography';
+
+// Layouts
+@import 'grid';
