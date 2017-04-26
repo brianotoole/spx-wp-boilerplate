@@ -10,6 +10,7 @@ get_header();
       <div class="col-xs-12 hero-text">
         <h1 class="page-title">Hero Title.</h1>
         <h3 class="sub-title">hero subtitle here.</h3>
+        <a href="#" class="btn primary">Button Primary</a>
       </div><!--/.col-->
     </div><!--/.row-->
   </div><!--/.container-->

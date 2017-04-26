@@ -1,0 +1,36 @@
+// Buttons
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    text-decoration: none;
+    color: $color-white;
+    background: darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    text-decoration: none;
+    color: $color-white;
+    background: darken($bg,25%);
+  }
+}
+
+.btn {
+  margin: 0;
+  padding: calc-em(9px) calc-em(18px);
+  font-family: $font-body;
+  font-size: calc-em(16px);
+  color: $color-white;
+  background-color: $color-primary;
+  text-decoration: none;
+  border-radius: 3px;
+  cursor: pointer;
+  &.primary {
+    @include button-bg($color-primary);
+  }
+  &.secondary {
+    @include button-bg($color-secondary);
+  }
+  &.white {
+    @include button-bg($color-white);
+  }
+}
