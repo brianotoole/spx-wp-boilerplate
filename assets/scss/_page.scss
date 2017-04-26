@@ -1,9 +1,9 @@
 // Page layout
 
 .hero {
-  background-color: $color-secondary;
+  background-color: $color-primary;
   .hero-text {
-    color: $color-black;
+    color: $color-white;
     padding: calc-em(50px) 0;
     .sub-title {
       margin-bottom: calc-em(15px);
@@ -18,8 +18,11 @@
 
 .page-header {
   padding: calc-em(50px) 0;
-  background-color: $color-secondary;
+  background-color: $color-primary;
   @include breakpoint(md) {
     padding: calc-em(100px) 0;
   }
+}
+.page-title {
+  color: $color-white;
 }
