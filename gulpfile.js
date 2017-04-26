@@ -1,11 +1,10 @@
 // Gulp config file
+
 // Styles
 var styleSRC            = './assets/scss/style.scss'; // Path to main .scss file
 var styleDestination    = './'; // Path to place the compiled CSS file (theme root)
+
 // JS
-//var jsVendorSRC         = './assets/js/*.js'; // Path to JS vendors folder
-//var jsVendorDestination = './assets/js/dist/'; // Path to place the compiled JS vendors file
-//var jsVendorFile        = 'vendors'; // Compiled JS vendors file name
 var jsCustomSRC         = './assets/js/*.js'; // Path to JS custom scripts folder
 var jsCustomDestination = './assets/js/dist/'; // Path to place the compiled JS custom scripts file
 var jsCustomFile        = 'build'; // Compiled JS build filename (ex = build.js)

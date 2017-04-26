@@ -5,7 +5,6 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-
 <?php wp_head(); ?>
 </head>
 
@@ -23,15 +22,20 @@
       <div class="col-xs-6 col-md-10">
         <?php wp_nav_menu( array( 'menu_name' => 'primary', 'menu_class' => 'nav-primary') ); ?>
         <div class="row end-xs middle-xs">
-          <span class="nav-toggle col-xs-10">Menu</span>
+          <div class="nav-toggle row end-xs middle-xs" id="js-nav-toggle">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </div><!--/.nav-toggle-->
         </div><!--/.row-->
       </div><!--/.col-->
     </div><!--/.row-->
   </div><!--/.container-->
 </header><!--/.header-->
 
-<div class="nav-mobile row">
+<div class="nav-mobile row" id="js-nav-mobile">
   <div class="col-xs-12">
+    <?php wp_nav_menu( array( 'menu_name' => 'primary', 'menu_class' => 'nav-mobile-wrap') ); ?>
   </div><!--/.col-->
 </div><!--/.nav-mobile-->
 

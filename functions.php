@@ -73,9 +73,9 @@ function sparxoo_dev_scripts() {
 
   // Load jQuery via CDN
 	wp_enqueue_script( 'sparxoo-dev-navigation','https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), 'v1.0.0', true );
-
-	wp_enqueue_script( 'sparxoo-dev-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/build.js', array(), 'v1.0.0', true );
-
+  // Load build file rendered by Gulpfile.js
+	wp_enqueue_script( 'sparxoo-dev-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/dist/build.js', array(), 'v1.0.0', true );
+  // Load comments script when single & enabled
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -88,7 +88,7 @@ require get_template_directory() . '/inc/extras.php';
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
-/* Removes default WP junk from header */
+// Removes default WP junk from header
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wlwmanifest_link');
 remove_action('wp_head', 'wp_generator');
@@ -99,7 +99,7 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 remove_action('wp_head', 'feed_links', 2);
 remove_action('wp_head', 'feed_links_extra', 3 );
-/*Removes prev and next article links*/
+// Removes prev and next article links
 add_filter( 'index_rel_link', '__return_false' );
 add_filter( 'parent_post_rel_link', '__return_false' );
 add_filter( 'start_post_rel_link', '__return_false' );
