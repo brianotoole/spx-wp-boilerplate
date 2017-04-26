@@ -28,6 +28,7 @@ var uglify       = require('gulp-uglify'); // Minifies JS files
 var rename       = require('gulp-rename'); // Renames files E.g. style.css -> style.min.css
 var sourcemaps   = require('gulp-sourcemaps'); // sourcemaps
 var notify       = require('gulp-notify'); // Sends message notification to you
+var livereload   = require('gulp-livereload'); // Livereload
 
 // Tasks
 gulp.task('styles', function () {
@@ -62,6 +63,7 @@ gulp.task('styles', function () {
 			maxLineLen: 10
 		}))
 		.pipe( gulp.dest( styleDestination ) )
+    .pipe(livereload())
 		.pipe( notify( { message: 'TASK: "styles" Completed!', onLast: true } ) )
 });
 
@@ -76,11 +78,13 @@ gulp.task( 'customJS', function() {
 		}))
 		.pipe( uglify() )
 		.pipe( gulp.dest( jsCustomDestination ) )
+    .pipe(livereload())
 		.pipe( notify( { message: 'TASK: "customJs" Completed!', onLast: true } ) );
 });
 
 // Watch tasks
  gulp.task( 'default', [ 'styles', 'customJS' ], function () {
+  livereload.listen();
  	gulp.watch( styleWatchFiles, [ 'styles' ] );
  	gulp.watch( customJSWatchFiles, [ 'customJS' ] );
  });
