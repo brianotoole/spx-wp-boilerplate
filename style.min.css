@@ -194,3 +194,12 @@ blockquote:before,blockquote:after,q:before,q:after{content:''}
 .btn.white{background:#fff}
 .btn.white:hover{text-decoration:none;color:#fff;background:#ebebeb;transition:all .3s ease}
 .btn.white:active{text-decoration:none;color:#fff;background:#bfbfbf}
+.text-white{color:#fff}
+.text-primary{color:#275cea}
+.text-secondary{color:#fff8e8}
+.bg-white{background:#fff}
+.bg-primary{background:#fff}
+.bg-secondary{background:#fff}
+.is-full-height{height:auto}
+@media(min-width:48em){.is-full-height{height:100vh}
+}
