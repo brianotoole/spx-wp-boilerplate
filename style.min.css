@@ -200,6 +200,7 @@ blockquote:before,blockquote:after,q:before,q:after{content:''}
 .bg-white{background:#fff}
 .bg-primary{background:#fff}
 .bg-secondary{background:#fff}
-.is-full-height{height:auto}
-@media(min-width:48em){.is-full-height{height:100vh}
+.full-height{height:auto}
+@media(min-width:48em){.full-height{height:100vh}
+.full-height.vertical-center{display:-ms-flexbox;display:flex;-ms-flex-flow:column wrap;flex-flow:column wrap;height:100vh;-ms-flex-pack:center;justify-content:center}
 }

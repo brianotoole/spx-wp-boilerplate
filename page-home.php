@@ -4,7 +4,7 @@ Template Name: Homepage
  */
 get_header();
 ?>
-<section class="hero is-full-height">
+<section class="hero full-height vertical-center">
   <div class="container-fluid">
     <div class="row center-xs">
       <div class="col-xs-12 hero-text">

@@ -11,9 +11,15 @@
 .bg-secondary {background: $color-white}
 
 // Layouts
-.is-full-height {
+.full-height {
   height: auto;
   @include breakpoint(md) {
     height: 100vh;
+    &.vertical-center {
+      display: flex;
+      flex-flow: column wrap;
+      height: 100vh;
+      justify-content: center;
+    }
   }
 }
