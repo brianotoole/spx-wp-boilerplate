@@ -16,7 +16,9 @@
     <div class="row middle-xs">
       <div class="col-xs-6 col-md-2">
         <div class="logo">
-          <img src="https://www.stratusvideo.com/wp-content/themes/stratus/images/logo-white.png">
+          <a href="<?php echo home_url(); ?>">
+            <img src="https://www.stratusvideo.com/wp-content/themes/stratus/images/logo-white.png">
+          </a>
         </div><!--/.logo-->
       </div><!--/.col-->
       <div class="col-xs-6 col-md-10">

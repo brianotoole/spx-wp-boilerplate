@@ -4,20 +4,22 @@
   max-width: 1200px;
   margin: 0 auto; }
 
-/*.container {
-  width: 98%;
+.container {
+  width: 100%;
   max-width: auto;
   margin: 0 auto;
+  padding-right: calc-em(15px);
+  padding-left: calc-em(15px);
   @include breakpoint(lg) {}
   @include breakpoint(md) {}
   @include breakpoint(sm) {}
-}*/
+}
 
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem; }
+  padding-right: calc-em(15px);
+  padding-left: calc-em(15px); }
 
 .row {
   box-sizing: border-box;
@@ -270,7 +272,7 @@
 
 @include breakpoint(md) {
   .container {
-    width: 46rem; }
+    max-width: 46rem; }
   [class*="col-sm"] {
     box-sizing: border-box;
     -webkit-box-flex: 0;
@@ -445,7 +447,7 @@
 
 @include breakpoint(lg) {
   .container {
-    width: 61rem; }
+    max-width: 61rem; }
   [class*="col-md"] {
     box-sizing: border-box;
     -webkit-box-flex: 0;

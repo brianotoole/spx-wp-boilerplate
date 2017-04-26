@@ -16,7 +16,7 @@ get_header();
   </div><!--/.container-->
 </section><!--/.hero-->
 
-<section class="home-intro">
+<section class="home-intro half-height">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6">

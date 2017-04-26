@@ -4,12 +4,22 @@
   background-color: $color-secondary;
   .hero-text {
     color: $color-black;
-    margin: calc-em(50px) 0;
-    @include breakpoint(md) {
-      margin: calc-em(100px) 0;
-    }
+    padding: calc-em(50px) 0;
     .sub-title {
       margin-bottom: calc-em(15px);
     }
+  }
+}
+
+.home-intro {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.page-header {
+  padding: calc-em(50px) 0;
+  background-color: $color-secondary;
+  @include breakpoint(md) {
+    padding: calc-em(100px) 0;
   }
 }
