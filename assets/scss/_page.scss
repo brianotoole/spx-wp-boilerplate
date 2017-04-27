@@ -4,6 +4,7 @@
   background-color: $color-primary;
   .hero-text {
     color: $color-white;
+    margin-top: calc-em(-20px);
     padding: calc-em(50px) 0;
     .sub-title {
       margin-bottom: calc-em(15px);
